@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c77d90707125bdc47a9ff044efa95ffc, type: 3}
-  m_Name: PickAbleItem
+  m_Name: PickAbleCoin
   m_EditorClassIdentifier: 
-  itemName: "\uC0AC\uACFC"
-  itemIcon: {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
+  itemName: 
+  itemIcon: {fileID: 0}
   maxStack: 99
-  isUsable: 1
+  isUsable: 0
   healAmount: 0

@@ -14,10 +14,13 @@ public class InventorySlot : MonoBehaviour
     public Text amountText;
     public GameObject emptySlotImage;
 
+    public Button slotButton;
+
     // Start is called before the first frame update
     void Start()
     {
         UpdateSlotUI();
+        slotButton.onClick.AddListener(OnSlotClick);
     }
     public void SetItem(ItemData newItem, int newAmount)
     {
@@ -75,6 +78,14 @@ public class InventorySlot : MonoBehaviour
         item = null;
         amount = 0;
         UpdateSlotUI() ;
+    }
+
+    void OnSlotClick()
+    {
+        if(item != null)
+        {
+            ItemUsePopup.instance.ShowPopup(item, this);
+        }
     }
 
 }
